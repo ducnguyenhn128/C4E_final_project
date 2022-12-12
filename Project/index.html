@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    
+</head>
+<body>
+    
+    <div class="container-fluid bg-secondary bg-gradient" style="--bs-bg-opacity: .15;">
+        <div class="row d-none d-md-flex mx-5 py-auto">
+            <div class="col-6 my-auto">
+                Hệ thống Showroom     |       Mua hàng: 0931733469
+            </div>
+    
+            <div class="col-6 text-end">
+                Tài khoản  |  Giỏ hàng
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- 1. Navbar -->
+    <nav class=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="logo1.png" height="20"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+        
+          <!-- Menu list -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SALE <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO KHOÁC 2 LỚP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO KHOÁC DÀY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ÁO POLO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ĐỒ NỈ</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ÁO LEN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">SƠ MI - QUẦN DÀI</a>
+                  </li>               
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">COLLECTION</a>
+                  </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- 2. Img jumbotron -->
+    <!-- 2.1 Quyền lợi - Lợi ích - desktop only -->
+    <div class="container-fluid">
+        <img class="img-fluid d-none d-md-block" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_S8GbEDDJiUYPWq70.jpg">
+
+
+        <div class="row d-sm-block d-md-none">
+            <img class="img-fluid max-width:100" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_wH8tjnuu2JsGzIed.jpg">
+        </div>
+
+
+        <!-- 2.1 Quyền lợi - Lợi ích - desktop only -->
+        <section>
+            <div class="row m-3 d-none d-lg-flex">
+                <!-- Lợi ích 1 -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 pt-3">
+                            <img class="img-fluid" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_3Kn3hmVgfqjT0MxOzNExmBAF.png">
+                        </div> 
+                        <div class="col-9">
+                            <p class="fs-4 text-danger m-0">Freeship</p>
+                            <p>Miễn phí ship với đơn hàng > 500k</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lợi ích 2 -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 pt-3">
+                            <img class="img-fluid" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_wpbKMwEdiohcjWjlwhyeqgql.png">
+                        </div> 
+                        <div class="col-9">
+                            <p class="fs-4 text-danger m-0">Thanh toán COD</p>
+                            <p>Kiểm tra, thanh toán khi nhận hàng COD</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lợi ích 3 -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 pt-3">
+                            <img class="img-fluid" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_aUKSes75e9wDHSgoOXvYFqvS.png">
+                        </div> 
+                        <div class="col-9">
+                            <p class="fs-4 text-danger m-0">Khách hàng VIP</p>
+                            <p>Ưu đãi dành cho khách hàng thân thiết</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-3 pt-3">
+                            <img class="img-fluid" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_m0Z9Blszj8ygEMGd54loKxBu.png">
+                        </div> 
+                        <div class="col-9">
+                            <p class="fs-4 text-danger m-0">Hỗ trợ bảo hành</p>
+                            <p>Đổi sản phẩm tại tất cả các store Torano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    <!-- 3. Sản phẩm mới -->
+    <div class="container-fluid">
+        <section>
+            <!-- Sản phẩm mới    Xem thêm -->
+            <div class="col-12">
+                <h2>
+                    <a href="#">SẢN PHẨM MỚI</a>
+                    <!-- <a class="see-more" href="#">Xem thêm >></a> -->
+                </h2>
+            </div>
+    
+    
+            <!-- jumbo image -->
+            <!-- On mobile -->
+            <div class="row d-sm-block d-lg-none">
+                <img class=" d-none d-md-block img-fluid" src="	https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_FJKsHusvXjFN6P1c.jpg">
+                <div class="col col-12 ">
+                    <!-- Slide Collection -->
+                    <div class="row">
+                        <div id="carouselCollection1" class="carousel slide container mt-2" data-bs-ride="carousel">
+                            <div class="carousel-inner w-100">
+                                <div class="carousel-item active">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221201/cf001.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo phao trần bông mũ tháo rời</p>
+                                            <p class="text-danger fw-bold">1100000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221114/cw008_2_52473266927_o.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp gió phối tay cổ bomber</p>
+                                            <p class="text-danger fw-bold">650000 đ</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221118/cu006.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp lót lông cổ cao</p>
+                                            <p class="text-danger fw-bold">750000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221010/52387828820_1f8b54a076_c__1_.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp Color Match</p>
+                                            <p class="text-danger fw-bold">650000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221114/cu002_lg_1_52474228525_o.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp lót lông basic</p>
+                                            <p class="text-danger fw-bold">690000 đ</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                
+    
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCollection1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCollection1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>            
+                    </div>
+                    <!-- Button Xem thêm -->
+                </div>
+            </div>
+    
+            <!-- On desktop -->
+            <div class="row d-none d-lg-block newProduct">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_Om4RXqAEijtyic8x.jpg">
+                <div class="col col-lg-8 newCollection">
+                    <!-- Slide Collection -->
+                    <div class="row">
+                        <div id="carouselCollection" class="carousel slide container mt-2" data-bs-ride="carousel">
+                            <div class="carousel-inner w-100">
+                                <div class="carousel-item active">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221201/cf001.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo phao trần bông mũ tháo rời</p>
+                                            <p class="text-danger fw-bold">1100000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221114/cw008_2_52473266927_o.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp gió phối tay cổ bomber</p>
+                                            <p class="text-danger fw-bold">650000 đ</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221118/cu006.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp lót lông cổ cao</p>
+                                            <p class="text-danger fw-bold">750000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221010/52387828820_1f8b54a076_c__1_.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp Color Match</p>
+                                            <p class="text-danger fw-bold">650000 đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <div class="col-md-4">
+                                        <div class="card card-body">
+                                            <img src="https://bucket.nhanh.vn/store/2071/ps/20221114/cu002_lg_1_52474228525_o.jpg" class="d-block w-100" alt="...">
+                                            <p class="fw-bold">Áo khoác 2 lớp lót lông basic</p>
+                                            <p class="text-danger fw-bold">690000 đ</p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                
+    
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCollection" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCollection" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>            
+                    </div>
+                    <!-- Button Xem thêm -->
+                </div>
+            </div>
+       
+        </section>
+    </div>
+
+    <!-- 4. Testimonial -->
+    <div class="container-fluid">
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center mt-2">KHÁCH HÀNG NÓI VỀ TORANO</h2>
+                </div>
+            </div>
+    
+            <div id="myCarousel" class="carousel slide container mt-2" data-bs-ride="carousel">
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">Cầu thủ Đình Trọng</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Săn sale cực đã tại Torano</p>
+                                <img class="img-fluid rounded-2" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211026_54TzWfnRVn4zQTNnSduLhZPA.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">GS Cù Trọng Xoay</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Phong cách bán hàng tận tình</p>
+                                <img class="img-fluid rounded-2" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211026_MwW6tmvrzG2b3Z28QFnEEsHT.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">Nhâm Mạnh Dũng</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Đồ đẹp giá tốt, thoải mái shopping</p>
+                                <img class="img-fluid rounded-2" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221114_QdZQI6s6MGehf5Us3BKFLFj0.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">Rapper G-Daddy</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Tuyệt vời</p>
+                                <img class="img-fluid rounded-2" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211026_vDpO9YD7GXOzLSs0znvXMnjh.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">Ca sĩ Hương Ly</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Ly tin tưởng Torano mỗi khi chọn đồ cho ông xã</p>
+                                <img class="img-fluid rounded-2" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211026_Cs1sZEDT68LL0bYEP6ilpFKC.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <p class="fs-4 fw-bold">Mạc Hồng Quân - Trọng Đại</p>
+                                <!-- Five star -->
+                                <div>  
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                    <i class="bi bi-star-fill icon-yellow"></i>
+                                </div>
+                                <p>Thực sự ấn tượng với phong cách nam tính của Torano</p>
+                                <img class="img-fluid rounded-2" src="	https://bucket.nhanh.vn/fb2e20-2071/bn/20211026_4iEceM85oIO1gakoYYZF7GEw.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning">Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+        </section>
+    </div>
+
+    <!-- 5. Chương trình khuyến mại -->
+    <br>
+    <div class="container-fluid">
+        <div class="row ">
+            <h2 class="col mx-4 mb-4">CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
+        </div>
+        <div class = "row row-cols-2  row-cols-md-4 px-4">
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351390471_eae4c80956_o__1_.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold ">Áo polo can phối</p>
+                <p class="fs-5 text-danger fw-bold">420.000 đ</p>
+            </div>
+            
+            
+
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52351814650_0621a5a122_o.jpg">      
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo họa tiết Pattern</p>
+                <p class="fs-5 text-danger fw-bold">420.000 đ</p>
+            </div>
+            
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221013/52288898508_ed1cdb9c89_o.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo in tràn họa tiết</p>
+                <p class="fs-5 text-danger fw-bold">400.000 đ</p>
+            </div>
+    
+            <div class="col productBlock">
+                <img class="img-fluid" src="https://bucket.nhanh.vn/store/2071/ps/20221012/52307427720_979d4c2935_o.jpg">
+                <p class="fs-6 mt-2 mb-0 fw-bold">Áo polo trơn bo kẻ</p>
+                <p class="fs-5 text-danger fw-bold">380.000 đ</p>
+            </div>
+        </div>
+    
+        <div class="row mb-4 col-12 col-md-6 mx-auto" >
+            <button type="button" class="btn btn-outline-danger">Xem thêm</button>
+        </div>
+    </div>
+
+    <!-- 6. Quyền lợi - Lợi ích Only mobile -->
+    <div class="container-fluid d-md-none">
+        <div class="row">
+            <div class="col-6 text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_3Kn3hmVgfqjT0MxOzNExmBAF.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="fs-4 text-danger m-0">Freeship</p>
+                <p>Miễn phí ship với đơn hàng > 500k</p>
+            </div>
+
+            <div class="col-6  text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_wpbKMwEdiohcjWjlwhyeqgql.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="fs-4 text-danger m-0">Thanh toán COD</p>
+                <p>Kiểm tra, thanh toán khi nhận hàng COD</p>
+            </div>
+
+            <div class="col-6 text-center">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_aUKSes75e9wDHSgoOXvYFqvS.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="fs-4 text-danger m-0">Khách hàng VIP</p>
+                <p class="">Ưu đãi dành cho khách hàng thân thiết</p>
+            </div>
+
+            <div class="col-6 text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <img class="img-fluid max-width:30% " src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_m0Z9Blszj8ygEMGd54loKxBu.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="fs-4 text-danger m-0">Hỗ trợ bảo hành</p>
+                <p class=" fs-6">Đối sản phẩm tại tất cả store TORANO</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <!-- 7. Bộ sưu tập dành cho bạn -->
+    <div class="container-fluid">
+        <section>
+            <!-- Bộ sưu tập dành cho bạn -->
+            <div class="row p-3" >
+                <div class="col-8">
+                    <h2>BỘ SƯU TẬP DÀNH CHO BẠN</h2>
+                </div>
+                <div class="col-4 text-end">
+                    <a class="text-primary">Xem thêm >></a>
+                </div>
+            </div>
+    
+            <!-- Carousel -->
+    
+            <!-- On mobile -->
+            <div id="carouselBosuutap" class="carousel carousel-dark slide d-sm-block d-md-none m-3 " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselBosuutap" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselBosuutap" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselBosuutap" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <!-- 3 slide -->
+                <div class="carousel-inner">
+                    <!-- Nhâm Mạnh Dũng -->
+                  <div class="carousel-item active">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20220526_IWBBaDGIhzhSJWDIXpGPKnvf.png" class="d-block w-100 rounded-2" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                  </div>
+                  <!-- Hoàng Đức  -->
+                  <div class="carousel-item">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20220126_RvTAyNrpiGm8bgDI7lV2hgvJ.jpg" class="d-block w-100 rounded-2" alt="...">
+                    <div class="row text-center m-4">
+    
+                        <h4>HOÀNG ĐỨC x TORANO</h4>
+                    </div>
+                  </div>
+                  <!-- Kim Lý -->
+                  <div class="carousel-item">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_gg1Js8OMKBiSZq41Mj5AE2h6.jpg" class="d-block w-100 rounded-2" alt="...">
+                    <div class="row text-center m-4">
+                        <h4>KIM LÝ x TORANO</h4>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Control slide -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBosuutap" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBosuutap" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            
+    
+            </div>
+    
+    
+            <!-- On desktop -->
+            <!-- 3 card -->
+            <div class="row m-2 d-none d-md-flex">
+                <!-- Nhâm Mạnh Dũng -->
+                <div class="col-3 text-center">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20220526_IWBBaDGIhzhSJWDIXpGPKnvf.png" class="d-block w-100">
+                    <h4 class="mt-4">NHÂM MẠNH DŨNG x TORANO</h4>
+                </div>
+    
+                <!-- HOÀNG ĐỨC -->
+                <div class="col-3 text-center">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20220126_RvTAyNrpiGm8bgDI7lV2hgvJ.jpg" class="d-block w-100" alt="...">
+                    <h4 class="mt-4">HOÀNG ĐỨC x TORANO</h4>
+                </div>
+    
+                <!-- KIM LÝ -->
+                <div class="col-3 text-center">
+                    <img src="https://bucket.nhanh.vn/fb2e20-2071/bn/20211021_gg1Js8OMKBiSZq41Mj5AE2h6.jpg" class="d-block w-100" alt="...">
+                    <h4 class="mt-4">MASCHILE | TORANO x KIM LÝ</h4>
+                </div>
+            </div>
+    
+            
+        </section>
+
+    </div>
+    
+    <!-- 8. Hệ thống cửa hàng - desktop only -->
+    <div class="container-fluid">
+        <section class="d-none d-md-block">
+            <div class="row mt-4 px-2">
+                <div class="col-9">
+                    <h2>HỆ THỐNG CỬA HÀNG TRÊN TOÀN QUỐC</h2>
+                </div>   
+                <div class="col-3 text-end">
+                    <a>Xem thêm >></a>
+                </div>
+            </div>
+    
+            <div class="row px-2 mt-5">
+                <!-- Embbed Maps -->
+                <div class="col-6">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=550&amp;height=600&amp;hl=en&amp;q=2 chùa bộc, hà nội&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/word-counter">Word Counter</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:600px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:600px;}.gmap_iframe {height:600px!important;}</style></div>            
+                </div>
+    
+                <!-- Store list -->
+                <div class="col-6">
+                    <h3>Tìm các cửa hàng Torano gần bạn</h3>
+                       
+                    <select class="form-control" id="st1" onchange="filterStorebyCity()">
+                        <option value="All">Tỉnh thành</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="TPHCM">TP Hồ Chí Minh</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Bắc Ninh">Bắc Ninh</option>
+                        <option value="Ninh Bình">Ninh Bình</option>
+                    </select>
+                 
+                    <!-- Scrollable modal -->
+                    <div id="storeBox" class="container mt-3">
+                        <ul id="storeCity" class="row row-cols-2">
+    
+                        </ul>
+                    </div>
+    
+                    <div id="storeCity1" class="mt-3 d-none">
+                        <ul class="row row-cols-2">
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+    
+                            <li class="col">
+                                <h5>TORANO 02 CHÙA BỘC</h5>
+                                <p>02, Chùa Bộc , Đống Đa</p>
+                                <p>097 640 8388</p>
+                                <p>8h30-22h</p>
+                                <p>--> CHỈ ĐƯỜNG</p>
+                            </li>
+                        </ul>
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <!-- 9. Kết nối - TMDT (mobile only) --> 
+    <div class=" container-fluid d-sm-block d-md-none">
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+            </div>
+        </div>
+
+        <div class="row m-2">
+            <div class="col-4 mx-auto my-auto">
+                <a href="#">
+                    <img class="img-fluid"src="https://torano.vn/tp/T0298/img/store/2071/logo-shopee.png" height="50px">
+                </a>
+            </div>
+            <div class="col-4 mx-auto my-auto">
+                <a href="#">
+                    <img class="img-fluid%" src="https://torano.vn/tp/T0298/img/store/2071/logo-tiki.jpg" height="45px">
+                </a>
+            </div>
+            <div class="col-4 mx-auto my-auto">
+                <a href="#">
+                    <img class="img-fluid"src="	https://torano.vn/tp/T0298/img/store/2071/lazada-logo.jpg">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    
+
+    <!-- 10. Info -->
+    <!-- On mobile -->
+    <!-- done -->
+    <div class="container-fluid d-sm-block d-md-none">
+        <div class="row text-center">
+            <img class="img-fluid" src="https://www.flickr.com/photos/140487787@N04/52558408933/">
+            <p class="fs-6">Hệ thống thời trang cho nam giới hàng đầu Việt Nam, hướng tới sự phóng khoáng, lịch lãm và trẻ trung.</p>
+        </div>
+        <hr>
+        <div class="row m-2">
+            <h5>ĐĂNG KÝ NHẬN THÔNG TIN MỚI</h5>
+            <form class="row mt-2">
+                <div class="col-9">
+                    <input type="email" class="form-control" placeholder="Nhập email của bạn">
+                </div>
+                <div class="col-3 p-0">
+                    <button type="button" class="btn btn-dark">Đăng ký</button>
+
+                </div>
+            </form>
+            <br>
+            <br>
+            <br><br><br>
+        </div>
+        <hr>
+    </div>
+
+    <!-- On desktop -->
+    <!-- done -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row">
+            
+            <!-- Gọi mua hàng -->
+            <div class="col-3  p-4">
+                <div class="row contact_box p-2">
+                    <div class="col-3 contact_box_phone_icon text-center my-auto">
+                        <i class="bi bi-telephone-outbound"></i>
+                    </div>
+                    <div class="col-9">
+                        <h6>GỌI MUA HÀNG ( 08:30-21:30 )</h6>
+                        <p class="fs-3 fw-semibold contact_box_phone mb-0">0964942121</p>
+                        <p class="contact_box_phone_time m-0 p-0">Tất cả các ngày trong tuần</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Gọi khiếu nại -->
+            <div class="col-3 p-4">
+                <div class="row contact_box p-2">
+                    <div class="col-3 contact_box_phone_icon text-center my-auto">
+                        <i class="bi bi-telephone-outbound"></i>
+                    </div>
+                    <div class="col-9">
+                        <h6>GÓP Ý, KHIẾU NẠI ( 08:30-21:30 )</h6>
+                        <p class="fs-3 fw-semibold contact_box_phone mb-0">0931733469</p>
+                        <p class="contact_box_phone_time m-0 p-0">Các ngày trong tuần (trừ ngày lễ)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 p-4">
+                <h5>ĐĂNG KÝ NHẬN THÔNG TIN MỚI</h5>
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <input type="email" class="form-control" placeholder="Nhập email của bạn tại đây ...">
+                    <button type="button" class="btn btn-dark">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 11. End Navigation - Mobile only-->
+    <div class="container-fluid d-sm-block d-md-none fixed-bottom">
+        <div class="row  bg-danger text-white mx-1 pt-3 ">
+            <div class="col-3 text-center px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                </svg>
+                <p>Trang chủ</p>
+            </div>
+
+            <div class="col-3 text-center px-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                <p>Danh mục</p>
+            </div>
+
+            <div class="col-3 text-center px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <p>Gọi ngay</p>
+            </div>
+
+            <div class="col-3  text-center px-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                </svg>
+                <p>Cửa hàng</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- 12. Footer - desktop only -->
+    <!-- done -->
+    <footer class="footer d-none d-md-flex">
+        <div class="row mt-3 p-4">
+            <div class="col-3">
+                <h4>Hộ kinh doanh Torano</h4>
+                <p>Mã số thuế: 01M8017618</p>
+                <p>Điện thoại: 0904636356.</p>
+                <p>Email: cskh@torano.vn</p>
+                <p>Địa chỉ: số 1165 Giải Phóng, phường Thịnh Liệt, quận Hoàng Mai, Thành phố Hà Nội</p>
+            </div>
+
+            <div class="col-3">
+                <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                <p>Hướng dẫn chọn size </p>
+                <p>Chính sách khách hàng thân thiết</p>
+                <p>Chính sách đổi hàng</p>
+                <p>Chính sách bảo mật</p>
+            </div>
+
+            <div class="col-3">
+                <h4>Về chúng tôi</h4>
+                <p>Giới thiệu</p>
+                <p>Liên hệ</p>
+                <p>Tìm đại lý</p>
+                <p>Tuyển dụng</p>
+            </div>
+
+            <div class="col-3">
+                <h4>Fanpage chúng tôi</h4>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTorano.vn%2F&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=132852580660445" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="sale.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

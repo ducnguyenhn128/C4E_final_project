@@ -1,0 +1,149 @@
+.duc-test {
+    font-size: fs-1;
+}
+
+.icon-yellow {
+    color:#ffc720;
+    /* color:red; */
+}
+
+.see-more {
+    position: absolute;
+    top: 440px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+/* new product */
+.newProduct {
+    position: relative;
+    /* background-color: gray; */
+    height: max-content;
+    /* width:; */
+    z-index: 1;
+    position: relative;
+}
+
+.newProduct img {
+    width: 40%;
+}
+
+.newCollection {
+    /* height: 500px;
+    width: 800px; */
+    background-color: #b20300;
+    position: absolute;
+    right: 5%;
+    top: 10%
+    
+}
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Chương trình khuyến mại */
+.productBlock {
+    padding-left: 1rem;
+}
+
+
+#storeBox {
+    height:500px;
+    overflow-y: scroll;
+    border: 3px solid rgb(189, 188, 188);
+    border-radius: 2%;
+    padding-top: 20px;
+}
+
+#storeBox li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#storeBox li p {
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.contact_box {
+    border: 2px solid rgb(189, 188, 188);
+    border-radius: 2%;
+
+
+}
+
+.contact_box_phone {
+    color: #b20300;
+}
+
+.contact_box_phone_icon {
+    font-size: 35px;
+    color: #b20300;}
+
+.contact_box_phone_time {
+    font-size: 0.7rem;
+}    
+
+/* Carousel */
+#myCarousel {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(33%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-33%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-33%) !important;
+    }
+}
+
+
+footer p {
+    font-size: 12px;
+}
+
+footer h4 {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
