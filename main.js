@@ -18,7 +18,7 @@ $('.carousel .carousel-item').each(function () {
 
 // This function will add a card, including (image - product - price tag) to web. We will use this funciton later
 
-function addProduct(product) {
+function addProduct(product, idElement='Salelist') {
     // Create mother div
     const itemCard = document.createElement('div');
     // Adding class for mother div
@@ -44,10 +44,46 @@ function addProduct(product) {
     itemCard.appendChild(itemImg);
     itemCard.appendChild(itemName);
     itemCard.appendChild(itemPrice);
+
+    // Select id Element in the HTML file, and append itemCard
+    document.getElementById(idElement).appendChild(itemCard);
 }
 
 
+// polo
+const poloCard = document.getElementById('polo');
+poloCard.addEventListener('click',function() {
+    // Clear all data
+    document.getElementById('SaleList1').innerHTML = ""
+    // Adding Polo item Card
 
+    for (let product of item) {
+        if (product['type'] === "POLO") {
+            addProduct(product,'SaleList1')
+        }
+    }
+
+    // addProduct(item[3],'SaleList1')
+})
+
+// Quần Âu
+const quanAuCard = document.getElementById('quan-au');
+quanAuCard.addEventListener('click',function() {
+    // Clear all data
+    document.getElementById('SaleList1').innerHTML = ""
+    // Adding Polo item Card
+
+    for (let product of item) {
+        if (product['type'] === "QUẦN ÂU") {
+            addProduct(product,'SaleList1')
+        }
+    }
+
+    // addProduct(item[3],'SaleList1')
+})
+
+
+// ----------------------------------------------------------
 
 
 // Section:  Hệ thống cửa hàng trên toàn quốc
