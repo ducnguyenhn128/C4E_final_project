@@ -53,13 +53,30 @@ h2 a {
     color: black;
 }
 
+/* Homepage - chương trình khuyến mãi */
 
-/* Chương trình khuyến mại */
+
+
+/* CSS for Tên sản phẩm - giá */
 .productBlock {
     padding-left: 1rem;
 }
+.productBlock-ProductName {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    max-height: 2rem;
+    overflow: hidden;
+}
+
+.productBlock-Price {
+    font-weight: bold;
+    color:#b20300
+}
+/* ----------------------- */
 
 
+
+/* Tìm cửa hàng gần bạn */
 #storeBox {
     height:500px;
     overflow-y: scroll;

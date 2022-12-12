@@ -1,4 +1,4 @@
-const sale = [
+const item = [
     {
         name: "Áo polo can phối 1.DSTP645",
         type: "POLO",
@@ -9,8 +9,20 @@ const sale = [
     {
         name: "Áo polo họa tiết Pattern ngang ngực 1.DSTP621",
         type: "POLO",
-        price: "420,000₫",
+        price: "410,000₫",
         link: "https://bucket.nhanh.vn/store/2071/ps/20221012/52351814650_0621a5a122_o.jpg"
+    },
+    {
+        name:"Áo polo can phối 1.DSTP602",
+        type:'POLO',
+        price:'440,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221012/52351632073_c1e662b23d_o__1_.jpg'
+    },
+    {
+        name:"Áo polo phối màu color-block 1.TP011",
+        type:'POLO',
+        price:'450,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221027/tp011__1_.jpg'
     },
     {
         name:"Áo polo in tràn họa tiết Unit 1.DSTP646",
@@ -19,18 +31,74 @@ const sale = [
         link: "https://bucket.nhanh.vn/store/2071/ps/20221013/52288898508_ed1cdb9c89_o.jpg"
     },
     {
-        name:"Áo polo trơn bo kẻ ",
+        name:"Áo polo trơn bo kẻ 1.DSTP639",
         type: "POLO",
         price:"380.000 đ",
         link:"https://bucket.nhanh.vn/store/2071/ps/20221012/52307427720_979d4c2935_o.jpg"
     },
     {
-        name:"Áo polo trơn bo kẻ ",
+        name:"Áo polo trơn bo kẻ 1.DST420",
         type: "POLO",
         price:"400.000 đ",
         link:"https://bucket.nhanh.vn/store/2071/ps/20221012/52307427720_979d4c2935_o.jpg"
-    }
+    },
 
+    {
+        name:"Áo polo phối màu color-block 1.TP004",
+        type:'POLO',
+        price:'400,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20220526/web_TP004__1_.png'
+    },
+
+    {
+        name:"Quần âu basic slim-fit vải kẻ BT056",
+        type:'QUẦN ÂU',
+        price:'240,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221114/bt056__12_.jpg'
+    },
+
+    {
+        name:"Quần âu gấu L'v 4.DABT065",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221026/bt065__7_.jpg'
+    },
+    {
+        name:"Quần âu slim-fit cạp trơn 4.DABT603",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221114/bt603__1_.jpg'
+    },
+    {
+        name:"Quần âu carrot ống suông 5.DABT902",
+        type:'QUẦN ÂU',
+        price:'540,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221026/bt902.jpg'
+    },
+    {
+        name:"Quần âu slim-fit điều chỉnh cạp trơn 6.DABT600",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221026/bt600__7_.jpg'
+    },
+    {
+        name:"Quần âu basic slim-fit 5.BT067",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20220627/bt067.jpg'
+    },
+    {
+        name:"Quần âu gấu L'v 5.DABT903",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221013/52351633973_f125c0fb98_o.jpg'
+    },
+    {
+        name:"Quần âu slim-fit cạp trơn 5.DABT900",
+        type:'QUẦN ÂU',
+        price:'500,000 ₫',
+        link: 'https://bucket.nhanh.vn/store/2071/ps/20221008/52350437122_839e20eed8_o__1_.jpg'
+    },
 ]
 
 

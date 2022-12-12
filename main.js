@@ -14,9 +14,44 @@ $('.carousel .carousel-item').each(function () {
 
 
 
+// Section Chương trình khuyến mại
+
+// This function will add a card, including (image - product - price tag) to web. We will use this funciton later
+
+function addProduct(product) {
+    // Create mother div
+    const itemCard = document.createElement('div');
+    // Adding class for mother div
+    itemCard.classList.add("col");
+    itemCard.classList.add("productBlock");
+
+    // Create child elements: 1. img   2.Product Name   3. Product price
+    const itemImg = document.createElement('img');
+    itemImg.classList.add("img-fluid");
+    itemImg.classList.add("pe-lg-3");
+    itemImg.src = product['link'];
+
+    const itemName = document.createElement("p");
+    itemName.classList.add('productBlock-ProductName')
+    itemName.innerHTML = product["name"];
+
+
+    const itemPrice = document.createElement("p")
+    itemPrice.classList.add('productBlock-Price')
+    itemPrice.innerHTML = product["price"];
+
+    // Append child elements to mother div
+    itemCard.appendChild(itemImg);
+    itemCard.appendChild(itemName);
+    itemCard.appendChild(itemPrice);
+}
 
 
 
+
+
+// Section:  Hệ thống cửa hàng trên toàn quốc
+// This function will Add store to Store Box, we will use this function later
 
 function addStore(store) {
     const storeInfo =  document.createElement('li');
@@ -44,11 +79,12 @@ function addStore(store) {
     document.getElementById("storeCity").appendChild(storeInfo);
 }
 
-// add all Store on load
+// on first loading, add all Store to Storebox
 for (let store of storeList) {
         addStore(store)
 }
 
+// This function will filter store in the city, that user chose in the selection box
 function filterStorebyCity() {
     var x = document.getElementById("st1").value;
 
@@ -69,3 +105,5 @@ function filterStorebyCity() {
         }
     }
 }
+
+// -------------------------------------------------------------- //
