@@ -76,11 +76,14 @@
     <!-- 2. Img jumbotron -->
     <!-- 2.1 Quyền lợi - Lợi ích - desktop only -->
     <div class="container-fluid">
-        <img class="img-fluid d-none d-md-block" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_S8GbEDDJiUYPWq70.jpg">
+        <div class="row d-none d-md-block">
+
+            <img class="img-fluid  px-0" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_S8GbEDDJiUYPWq70.jpg">
+        </div>
 
 
         <div class="row d-sm-block d-md-none">
-            <img class="img-fluid max-width:100" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_wH8tjnuu2JsGzIed.jpg">
+            <img class="img-fluid max-width:100 px-0" src="https://bucket.nhanh.vn/fb2e20-2071/bn/20221129_wH8tjnuu2JsGzIed.jpg">
         </div>
 
 
@@ -874,8 +877,11 @@
 
 
             <div class="col-6 p-4">
-                <h5>ĐĂNG KÝ NHẬN THÔNG TIN MỚI</h5>
+                <div class="row">
+                    <h5>ĐĂNG KÝ NHẬN THÔNG TIN MỚI</h5>
+                </div>
                 <form class="row row-cols-lg-auto g-3 align-items-center">
+                    
                     <input type="email" class="form-control" placeholder="Nhập email của bạn tại đây ...">
                     <button type="button" class="btn btn-dark">Đăng ký</button>
                 </form>
