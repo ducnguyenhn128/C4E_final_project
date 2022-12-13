@@ -51,7 +51,9 @@ function addProduct(product, idElement='Salelist') {
 }
 
 
-// This function will deactive all category item for sale (text to black, align left)
+// This function will deactive all category items for sale (text to black, align left)
+// Category Items for sale: Áo POLO, Quần Âu (the icon with text below)
+// We will use this function later, when user click on an item, other item will be deactive a
 function deactiveAllItemCategory() {
     const divs = document.querySelectorAll(".itemCategory-active");
     for (let div of divs) {
