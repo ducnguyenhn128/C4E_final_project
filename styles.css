@@ -10,6 +10,7 @@
     color: rgb(54, 54, 54)
 }
 
+/* ----------------------------------- */
 .bi-person-fill {
     vertical-align: top;
 }
@@ -54,8 +55,26 @@ h2 a {
 }
 
 /* Homepage - chương trình khuyến mãi */
+.itemCategory-active img{
+    /* height: 10rem;
+    width: 10rem; */
+}
 
+.itemCategory-active p {
+    margin-top: 0.7rem;
+    color:#b20300;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
 
+.itemCategory-deactive p {
+    margin-top: 0.7rem;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.8rem;
+}
 
 /* CSS for Tên sản phẩm - giá */
 .productBlock {

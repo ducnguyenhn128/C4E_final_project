@@ -17,6 +17,7 @@ $('.carousel .carousel-item').each(function () {
 // Section Chương trình khuyến mại
 
 // This function will add a card, including (image - product - price tag) to web. We will use this funciton later
+// This function has 2 arguments, product and idElement, respresent for what to add, and where to add in the page. By default, idElement 's value is Salelist - in the section 'Chương trình khuyến mại'
 
 function addProduct(product, idElement='Salelist') {
     // Create mother div
@@ -50,36 +51,57 @@ function addProduct(product, idElement='Salelist') {
 }
 
 
+// This function will deactive all category item for sale (text to black, align left)
+function deactiveAllItemCategory() {
+    const divs = document.querySelectorAll(".itemCategory-active");
+    for (let div of divs) {
+        // div.classList = "col-4 col-md-2 itemCategory-deactive"
+        div.classList.remove('itemCategory-active');
+        div.classList.add('itemCategory-deactive');
+    }
+}
+
+
 // polo
-const poloCard = document.getElementById('polo');
+const poloCard = document.getElementById('itemCategoryforSale-Polo');
 poloCard.addEventListener('click',function() {
     // Clear all data
-    document.getElementById('SaleList1').innerHTML = ""
+    document.getElementById('SaleList').innerHTML = ""
     // Adding Polo item Card
 
     for (let product of item) {
         if (product['type'] === "POLO") {
-            addProduct(product,'SaleList1')
+            addProduct(product,'SaleList');
         }
     }
 
-    // addProduct(item[3],'SaleList1')
+    // Deactive all item Category
+    deactiveAllItemCategory();
+    // Active this item Category
+    poloCard.classList.remove('itemCategory-deactive');
+    poloCard.classList.add('itemCategory-active')
 })
 
 // Quần Âu
-const quanAuCard = document.getElementById('quan-au');
+const quanAuCard = document.getElementById('itemCategoryforSale-QuanAu');
 quanAuCard.addEventListener('click',function() {
     // Clear all data
-    document.getElementById('SaleList1').innerHTML = ""
+    document.getElementById('SaleList').innerHTML = ""
     // Adding Polo item Card
 
     for (let product of item) {
         if (product['type'] === "QUẦN ÂU") {
-            addProduct(product,'SaleList1')
+            addProduct(product,'SaleList')
         }
     }
 
-    // addProduct(item[3],'SaleList1')
+    // Deactive all item Category
+    deactiveAllItemCategory();
+    // Active this item Category
+    quanAuCard.classList.remove('itemCategory-deactive');
+    quanAuCard.classList.add('itemCategory-active')
+
+
 })
 
 
