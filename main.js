@@ -11,9 +11,6 @@ $('.carousel .carousel-item').each(function () {
     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 
 
-
-
-
 // Section Chương trình khuyến mại
 
 // This function will add a card, including (image - product - price tag) to web. We will use this funciton later
@@ -54,7 +51,7 @@ function addProduct(product, idElement='Salelist') {
 // This function will deactive all category items for sale (text to black, align left)
 // Category Items for sale: Áo POLO, Quần Âu (the icon with text below)
 // We will use this function later, when user click on an item, other item will be deactive
-// test git
+// function: deactive - All -Item - Category
 function deactiveAllItemCategory() {
     const divs = document.querySelectorAll(".itemCategory-active");
     for (let div of divs) {
@@ -65,14 +62,13 @@ function deactiveAllItemCategory() {
     }
 }
 
-
-// polo
+// POLO
 const poloCard = document.getElementById('itemCategoryforSale-Polo');
 poloCard.addEventListener('click',function() {
     // Clear all data
     document.getElementById('SaleList').innerHTML = ""
+    
     // Adding Polo item Card
-
     for (let product of item) {
         if (product['type'] === "POLO") {
             addProduct(product,'SaleList');
