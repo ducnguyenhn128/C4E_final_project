@@ -11,8 +11,13 @@
 }
 
 /* ----------------------------------- */
+.navbar {
+    border:10px solid;
+}
+
 .nav-item a:hover {
     color:#f30804;
+    margin-bottom: 2px solid #f30804;
 }
 
 /* ----------------------------------- */
