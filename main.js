@@ -55,8 +55,9 @@ function addProduct(product, idElement='Salelist') {
 function deactiveAllItemCategory() {
     const divs = document.querySelectorAll(".itemCategory-active");
     for (let div of divs) {
-        // div.classList = "col-4 col-md-2 itemCategory-deactive"
+        // remove active class
         div.classList.remove('itemCategory-active');
+        // add deactive clsas
         div.classList.add('itemCategory-deactive');
     }
 }
