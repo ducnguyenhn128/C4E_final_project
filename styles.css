@@ -12,12 +12,12 @@
 
 /* ----------------------------------- */
 .navbar {
-    border:10px solid;
+    border:5px solid;
 }
 
-.nav-item a:hover {
+.navbar .nav-item a:hover {
     color:#f30804;
-    margin-bottom: 2px solid #f30804;
+    border-bottom: 2px solid white;
 }
 
 /* ----------------------------------- */
