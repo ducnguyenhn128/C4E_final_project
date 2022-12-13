@@ -23,18 +23,19 @@
 /* ----------------------------------- */
 
 
-
+/* use in top bar */
 .bi-person-fill {
     vertical-align: top;
 }
 
+/* use  in star - testimonial */
 .icon-yellow {
     color:#ffc720;
     /* color:red; */
 }
 
+/* Xem thêm - in h2 */
 .see-more {
-
     color: black;
     text-decoration: none;
 }
@@ -68,10 +69,7 @@ h2 a {
 }
 
 /* Homepage - chương trình khuyến mãi */
-.itemCategory-active img{
-    /* height: 10rem;
-    width: 10rem; */
-}
+
 
 .itemCategory-active p {
     margin-top: 0.7rem;
